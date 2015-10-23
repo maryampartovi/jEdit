@@ -25,6 +25,7 @@ indent-lines.shortcut=C+i
 join-lines.shortcut=C+j
 swap-marker.shortcut=C+k
 goto-line.shortcut=C+g
+hideshows-scrollbars.shortcut= C+h
 # C+m is a prefix
 new-file.shortcut=C+n
 new-file-in-mode.shortcut=CS+n

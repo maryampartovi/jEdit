@@ -245,7 +245,7 @@ exit.label=E$xit
 #{{{ Recent Files menu
 recent-files.code=new RecentFilesProvider();
 recent-files.label=Recent $Files
-recent-files.textfield.tooltip=a filter prefix can be entered here
+recent-files.textfield.tooltip=a filter text can be entered here
 no-recent-files.label=No Recent Files
 clear-recent-files.label=Clear Recent Files
 #}}}
@@ -272,7 +272,8 @@ edit=undo \
      expand-abbrev \
      - \
      goto-line \
-     - \
+     hideshows-scrollbars \
+	 \
      %text \
      %indent \
      %source
@@ -292,6 +293,7 @@ word-count.label=$Word Count...
 complete-word.label=Co$mplete Word
 expand-abbrev.label=E$xpand Abbreviation
 goto-line.label=$Go to Line...
+hideshows-scrollbars.label=Hide/Show Scrollbars
 
 #{{{ More Clipboard menu
 clipboard=cut-append \
@@ -1269,6 +1271,10 @@ badurl.message=The following URL is invalid: {0}\n\
 #{{{ Go to line dialog
 goto-line.title=Go To Line
 goto-line.message=Go to line:
+#}}}
+
+#{{{ Hide/Show Scrollbars dialog
+hideshows-scrollbars.title=Hide/Show Scrollbars
 #}}}
 
 #{{{ Word count dialog
@@ -2314,6 +2320,7 @@ vfs.browser.collapse.icon=16x16/actions/group-collapse.png
 
 vfs.browser.name=Name
 vfs.browser.type=Type
+vfs.browser.creationDate=CreationDate
 vfs.browser.type.file=File
 vfs.browser.type.directory=Directory
 vfs.browser.type.filesystem=File system
@@ -2586,6 +2593,7 @@ plugin-manager.remove-failed.message=The plugin {0}\n\
 
 #{{{ File Properties Dialog
 fileprop.name=Name
+fileprop.creationDate=CreationDate
 fileprop.path=Path
 fileprop.lastmod=Last Modified
 fileprop.size=Size

@@ -1733,7 +1733,7 @@ check_selected: for(int i = 0; i < selectedFiles.length; i++)
 						{
 							VFSFile file = selected[i];
 							FavoritesVFS.addToFavorites(file.getPath(),
-								file.getType());
+								file.getType() );
 						}
 					}
 				}

@@ -66,7 +66,6 @@ public class RecentDirectoriesProvider implements DynamicMenuProvider
 					((JMenuItem)evt.getSource())
 					.getActionCommand());
 			}
-
 			public void mouseExited(MouseEvent evt)
 			{
 				view.getStatus().setMessage(null);

@@ -26,6 +26,8 @@ package org.gjt.sp.jedit.io;
 //{{{ Imports
 import java.awt.Color;
 import java.io.*;
+import java.util.Date;
+
 import org.gjt.sp.jedit.*;
 import org.gjt.sp.jedit.browser.VFSBrowser;
 import org.gjt.sp.jedit.browser.FileCellRenderer;
@@ -207,6 +209,10 @@ public class VFSFile implements Serializable
 	/**
 	 * @deprecated Use the accessor/mutator methods instead.
 	 */
+	public long creationDate;
+	/**
+	 * @deprecated Use the accessor/mutator methods instead.
+	 */
 	public int type;
 	/**
 	 * @deprecated Use the accessor/mutator methods instead.
@@ -245,6 +251,7 @@ public class VFSFile implements Serializable
 		this.type = type;
 		this.length = length;
 		this.hidden = hidden;
+
 		if(path != null)
 		{
 			// maintain backwards compatibility
@@ -349,6 +356,7 @@ public class VFSFile implements Serializable
 	{
 		this.type = type;
 	} //}}}
+
 
 	//{{{ getLength() method
 	public long getLength()
@@ -504,4 +512,5 @@ public class VFSFile implements Serializable
 
 	/** This is true if the attributes are already fetched. */
 	private boolean fetchedAttrs;
-}
+
+	}

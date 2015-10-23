@@ -409,6 +409,12 @@
 	</CODE>
 </ACTION>
 
+<ACTION NAME="hideshows-scrollbars">     <!--Change Request #2-->
+	<CODE>
+		textArea.hideShowScrollbars();
+	</CODE>
+</ACTION>
+
 <ACTION NAME="goto-marker" NO_REPEAT="TRUE" NO_RECORD="TRUE">
 	<CODE>
 		view.getInputHandler().readNextChar(

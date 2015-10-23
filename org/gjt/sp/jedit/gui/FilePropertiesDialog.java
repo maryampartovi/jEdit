@@ -216,6 +216,7 @@ public class FilePropertiesDialog extends EnhancedDialog
 		JPanel propField = new JPanel();
 		propField.setLayout(new GridLayout(4, 1));
 		propField.add(new JLabel(jEdit.getProperty("fileprop.name")+": "+local.getName()));
+		propField.add(new JLabel(jEdit.getProperty("fileprop.creationDate")+": "+local.getModified()));
 		propField.add(new JLabel(jEdit.getProperty("fileprop.path")+": "+local.getPath()));
 		propField.add(new JLabel(jEdit.getProperty("fileprop.lastmod")+": "+sdf.format(new Date(local.getModified()))));
 		if(local.getType() == VFSFile.DIRECTORY)

@@ -75,6 +75,7 @@ public abstract class TextArea extends JComponent
 	 * @param propertyManager the property manager that contains informations like shortcut bindings
 	 * @param inputHandlerProvider the inputHandlerProvider
 	 */
+
 	protected TextArea(IPropertyManager propertyManager, InputHandlerProvider inputHandlerProvider)
 	{
 		this.inputHandlerProvider = inputHandlerProvider;
@@ -91,7 +92,8 @@ public abstract class TextArea extends JComponent
 		blink = true;
 		offsetXY = new Point();
 		structureMatchers = new LinkedList<StructureMatcher>();
-		structureMatchers.add(new StructureMatcher.BracketMatcher());
+		structureMatchers.add(new StructureMatcher.BracketMatcher()
+		);
 		//}}}
 
 		//{{{ Initialize the GUI
@@ -144,6 +146,19 @@ public abstract class TextArea extends JComponent
 
 		popupEnabled = true;
 	} //}}}
+
+	// {{{hideShowScrollbars() method                       Change Request#2
+	public void hideShowScrollbars(){
+		if (horizontal.isVisible())
+			horizontal.setVisible(false);
+		else
+			horizontal.setVisible(true);
+
+		if (vertical.isVisible())
+			vertical.setVisible(false);
+		else
+			vertical.setVisible(true);
+	}//}}}
 
 	//{{{ getFoldPainter() method
 	public FoldPainter getFoldPainter()

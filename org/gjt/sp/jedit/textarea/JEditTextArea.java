@@ -64,6 +64,7 @@ public class JEditTextArea extends TextArea
 		this.view = view;
 	} //}}}
 
+
 	//{{{ getFoldPainter() method
 	@Override
 	public FoldPainter getFoldPainter()
